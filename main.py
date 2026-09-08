@@ -2,5 +2,5 @@ from PIL import Image
 
 im = Image.open("ascii-pineapple.jpg")
 
-print(im.format, im.size, im.mode)
-im.show()
+width, height = im.size
+print(f"Successfully loaded image!\nImage size: {width} * {height}")
